@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.example.android.miwok.MainActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/hangul_blue_red"
+        android:weightSum="8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:id="@+id/textGrid"
+                android:text="HanGul App"
+                android:textColor="@android:color/black"
+                android:textSize="60dp"
+                android:fontFamily="@font/arizonia"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <GridLayout
+            android:id="@+id/mainGrid"
+            android:columnCount="2"
+            android:rowCount="3"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:layout_weight="8"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="14dp">
+
+            <!-- Row 1 -->
+            <!-- Column 1 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/alphabit"
+                style="@style/CategoryStyle"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/iu_alphapit" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Alphabit - 알파비트"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!-- Column 2 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/family"
+                style="@style/CategoryStyle"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/iu_family" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Family - 가족"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Row 2 -->
+            <!-- Column 1 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/numbers"
+                style="@style/CategoryStyle"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/iu_numbers" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Numbers - 번호"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!-- Column 2 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/colors"
+                style="@style/CategoryStyle"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/colors_edit" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Colors - 색깔"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Row 2 -->
+            <!-- Column 1 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/weather"
+                style="@style/CategoryStyle"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/weather_edit" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Weather - 날씨"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Column 2 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/phrases"
+                style="@style/CategoryStyle"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/conver" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Phrases - 구"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+    <!-- tab for contact -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#4A312A">
+            <TextView
+                android:id="@+id/contact_us"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/contact_us"
+                android:textColor="#FFFFFF"
+                android:gravity="center_horizontal"
+                android:layout_margin="1dp"/>
+            <ImageView
+                android:id="@+id/fb"
+                android:src="@drawable/pics_facelogo"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_toRightOf="@id/contact_us" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
